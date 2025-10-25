@@ -69,5 +69,6 @@ LIMIT 3 OFFSET 2;
 SELECT * FROM products
 WHERE name LIKE 'L%';
 
+-- Select products that are not available
 SELECT * FROM products
-WHERE name LIKE '%top';
+WHERE is_available = FALSE;
